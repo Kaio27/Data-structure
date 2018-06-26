@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1528016753 source:c:\minhas coisas\matérias\2018\estrutura de dados 2 ano\implementações\fila_dinamica\funcao.c
+	<stdio.h>
+	<stdlib.h>
+	"funcoes.h"
+
+1528016667 c:\minhas coisas\matérias\2018\estrutura de dados 2 ano\implementações\fila_dinamica\funcoes.h
+	<stdio.h>
+	<stdlib.h>
+
+1528016698 source:c:\minhas coisas\matérias\2018\estrutura de dados 2 ano\implementações\fila_dinamica\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funcoes.h"
+
+1528309188 source:c:\users\a120065\downloads\fila_dinamica\funcao.c
+	<stdio.h>
+	<stdlib.h>
+	"funcoes.h"
+
+1528309039 c:\users\a120065\downloads\fila_dinamica\funcoes.h
+	<stdio.h>
+	<stdlib.h>
+
+1528309033 source:c:\users\a120065\downloads\fila_dinamica\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funcoes.h"
+

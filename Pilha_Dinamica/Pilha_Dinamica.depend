@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1526660971 source:c:\users\a120065\desktop\pilha_dinamica\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funcao.h"
+
+1526661312 source:c:\users\a120065\desktop\pilha_dinamica\funcao.c
+	<stdlib.h>
+	<stdio.h>
+	"funcao.h"
+
+1526661310 c:\users\a120065\desktop\pilha_dinamica\funcao.h
+

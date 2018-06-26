@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1492999544 source:c:\users\victor hugo de souza\documents\codeblocks\pilha_estatica\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1492999544 source:c:\minhas coisas\matérias\2° ano\estrutura de dados (aulas e exercicios)\conteudo prova 2\pilha_estatica\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1526020835 source:c:\minhas coisas\matérias\2018\estrutura de dados 2 ano\implementações\pilha_estatica\pilha.c
+	<stdio.h>
+	<stdlib.h>
+	"pilha.h"
+
+1526000460 c:\minhas coisas\matérias\2018\estrutura de dados 2 ano\implementações\pilha_estatica\pilha.h
+	<stdio.h>
+	<stdlib.h>
+
+1526017028 source:c:\minhas coisas\matérias\2018\estrutura de dados 2 ano\implementações\pilha_estatica\main.c
+	<stdio.h>
+	<stdlib.h>
+	"pilha.h"
+

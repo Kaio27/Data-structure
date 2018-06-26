@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1527111335 source:c:\users\a120065\desktop\fila_estatica\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funcoes.h"
+
+1526664101 source:c:\users\a120065\desktop\fila_estatica\funcao.c
+	<stdio.h>
+	<stdlib.h>
+	"funcao.h"
+
+1526663059 c:\users\a120065\desktop\fila_estatica\funcao.h
+
+1527111345 source:c:\users\a120065\desktop\fila_estatica\funcaoo.c
+	<stdio.h>
+	<stdlib.h>
+	"funcoes.h"
+
+1527111151 c:\users\a120065\desktop\fila_estatica\funcoes.h
+
