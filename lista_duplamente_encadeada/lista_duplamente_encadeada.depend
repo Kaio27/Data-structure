@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1524244764 source:c:\users\a120065\desktop\lista_duplamente_encadeada\lista_duplamente_encadeada.c
+	<stdlib.h>
+	<stdio.h>
+	"lista_duplamente_encadeada.h"
+
+1524242634 c:\users\a120065\desktop\lista_duplamente_encadeada\lista_duplamente_encadeada.h
+
+1524244640 source:c:\users\a120065\desktop\lista_duplamente_encadeada\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista_duplamente_encadeada.h"
+

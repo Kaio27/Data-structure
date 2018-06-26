@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1523482770 source:c:\users\a120065\desktop\trabalho1\listatel.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"listaTel.h"
+
+1523482814 c:\users\a120065\desktop\trabalho1\listatel.h
+	<stdio.h>
+
+1523482457 source:c:\users\a120065\desktop\trabalho1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"listaTel.h"
+

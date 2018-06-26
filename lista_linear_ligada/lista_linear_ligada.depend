@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1523022550 source:c:\users\a120065\desktop\lista_linear_ligada\lista_encadeada_estatica.c
+	"lista_encadeada_estatica.h"
+
+1523021530 c:\users\a120065\desktop\lista_linear_ligada\lista_encadeada_estatica.h
+
+1523022765 source:c:\users\a120065\desktop\lista_linear_ligada\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista_encadeada_estatica.h"
+

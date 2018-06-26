@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1521667851 source:c:\users\a120065\desktop\aula01\lista_sequencial_estatica.c
+	<conio.h>
+	"lista_sequencial_estatica.h"
+
+1521667828 c:\users\a120065\desktop\aula01\lista_sequencial_estatica.h
+
+1521666828 source:c:\users\a120065\desktop\aula01\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista_sequencial_estatica.h"
+
+1521774811 source:c:\users\usuario\downloads\aula01\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista_sequencial_estatica.h"
+
+1521774774 c:\users\usuario\downloads\aula01\lista_sequencial_estatica.h
+
+1521774801 source:c:\users\usuario\downloads\aula01\lista_sequencial_estatica.c
+	<conio.h>
+	"lista_sequencial_estatica.h"
+

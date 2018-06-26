@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1524514357 source:c:\users\a120065\downloads\lista_estatica_encadeada\lista_sequencial_estatica.c
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	"lista_sequencial_estatica.h"
+
+1524514374 c:\users\a120065\downloads\lista_estatica_encadeada\lista_sequencial_estatica.h
+
+1524513795 source:c:\users\a120065\downloads\lista_estatica_encadeada\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista_sequencial_estatica.h"
+

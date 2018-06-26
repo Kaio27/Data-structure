@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1524085327 source:c:\users\a120065\desktop\lista_ligada_simplesmente_encadeada_dinamica\lista_ligada_simplesmente_encadeada_dinamica.c
+	<stdio.h>
+	<stdlib.h>
+	"lista_ligada_simplesmente_encadeada_dinamica.h"
+
+1524084773 c:\users\a120065\desktop\lista_ligada_simplesmente_encadeada_dinamica\lista_ligada_simplesmente_encadeada_dinamica.h
+
+1524083385 source:c:\users\a120065\desktop\lista_ligada_simplesmente_encadeada_dinamica\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista_ligada_simplesmente_encadeada_dinamica.h"
+

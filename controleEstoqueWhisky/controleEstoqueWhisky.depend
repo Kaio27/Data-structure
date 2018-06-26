@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1525074098 source:c:\minhas coisas\matérias\2018\estrutura de dados 2 ano\controleestoquewhisky\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funcao.h"
+
+1525074082 c:\minhas coisas\matérias\2018\estrutura de dados 2 ano\controleestoquewhisky\funcao.h
+	<stdio.h>
+
+1525074092 source:c:\minhas coisas\matérias\2018\estrutura de dados 2 ano\controleestoquewhisky\funcao.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funcao.h"
+
