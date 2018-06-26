@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1529519605 source:c:\users\a120065\desktop\sorting_methods\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	"methods.h"
+
+1529079582 c:\users\a120065\desktop\sorting_methods\methods.h
+	<stdio.h>
+	<stdlib.h>
+
+1529519493 source:c:\users\a120065\desktop\sorting_methods\methods.c
+	<stdio.h>
+	<stdlib.h>
+	"methods.h"
+
