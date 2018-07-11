@@ -14,7 +14,7 @@ int main(){
    for(i = 0; i < n; i++){
     printf("\t%d", vetor[i]);
    }
-   insertionSort(&vetor, n);
+   selectionSort(&vetor, n);
 
    printf("\n ----- Depois da ordenacao\n");
    for(i = 0; i < n; i++){

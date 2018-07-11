@@ -60,7 +60,7 @@ void insertionSort (int *vetor, int n){ // j é o elemento que quer ser inserido
     }
 }
 
-/*void selectionSort (int *vetor, int numero){
+void selectionSort (int *vetor, int numero){
     int i, j, aux, min;
     for(i = 0; i < numero-1; i++){
         min = i;
@@ -73,4 +73,8 @@ void insertionSort (int *vetor, int n){ // j é o elemento que quer ser inserido
         vetor[i] = vetor[min];
         vetor[min] = aux;
     }
-}*/
+}
+
+void heap_sort_maximo(int *vetor, int n){
+
+}
