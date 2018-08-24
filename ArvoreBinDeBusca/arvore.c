@@ -71,3 +71,68 @@ int conta(Pont raiz){
         return (conta (raiz->esq) + 1 + conta(raiz->dir));
     }
 }
+
+/* Retorna o endereço do nó a ser removido
+   Abastece o ponteiro *pai com o endereço do pai do nó a ser removido */
+
+Pont buscaNo(Pont raiz, TIPOCHAVE ch, Pont *pai) {
+    Pont atual = raiz;
+    *pai = NULL;
+    while (atual) {
+        if (atual->chave == ch)
+            return(atual);
+
+        *pai = atual;
+
+        if (ch < atual->chave)
+            atual = atual->esq;
+        else
+            atual = atual->dir;
+    }
+    return(NULL);
+}
+
+Pont removeNo(Pont raiz, TIPOCHAVE ch) {
+    Pont pai, no, p, q;
+
+    no = buscaNo(raiz, ch, &pai);
+
+    if (no == NULL)
+        return(raiz);
+
+    if (!no->esq || !no->dir) {
+        if (!no->esq)
+            q = no->dir;
+        else
+            q = no->esq;
+    }
+    else {
+        p = no;
+        q = no->esq;
+
+        while (q->dir) {
+            p = q;
+            q = q->dir;
+        }
+
+        if (p != no) {
+            p->dir = q->esq;
+            q->esq = no->esq;
+        }
+        q->dir = no->dir;
+    }
+
+    if (!pai) {
+        free(no);
+        return(q);
+    }
+
+    if (ch < pai->chave)
+        pai->esq = q;
+    else
+        pai->dir = q;
+
+    free(no);
+    return(raiz);
+}
+

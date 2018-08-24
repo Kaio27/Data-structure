@@ -24,3 +24,5 @@ void leituraEmOrdem(Pont raiz);
 void leituraPreOrdem(Pont raiz);
 void leituraPosOrdem(Pont raiz);
 int conta(Pont raiz);
+Pont buscaNo(Pont raiz, TIPOCHAVE ch, Pont *pai);
+Pont removeNo(Pont raiz, TIPOCHAVE ch);
