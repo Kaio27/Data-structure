@@ -50,7 +50,7 @@ void leituraEmOrdem(Pont raiz){
 
 void leituraPreOrdem(Pont raiz){
     if(raiz != NULL){
-        printf("%i", raiz->chave);
+        printf("\t%i", raiz->chave);
         leituraPreOrdem(raiz->esq);
         leituraPreOrdem(raiz->dir);
     }
@@ -60,7 +60,7 @@ void leituraPosOrdem(Pont raiz){
     if(raiz != NULL){
         leituraPosOrdem(raiz->esq);
         leituraPosOrdem(raiz->dir);
-        printf("%i", raiz->chave);
+        printf("%i ", raiz->chave);
     }
 }
 
