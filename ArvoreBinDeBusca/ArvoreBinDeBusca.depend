@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1534515915 source:c:\users\a120137\documents\arvorebindebusca\arvore.c
+	"arvore.h"
+
+1534515878 c:\users\a120137\documents\arvorebindebusca\arvore.h
+	<stdlib.h>
+	<stdio.h>
+
+1534515968 source:c:\users\a120137\documents\arvorebindebusca\main.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
+1534958498 source:c:\users\a120065\desktop\arvorebindebusca\arvore.c
+	"arvore.h"
+
+1534961875 c:\users\a120065\desktop\arvorebindebusca\arvore.h
+	<stdlib.h>
+	<stdio.h>
+
+1534959184 source:c:\users\a120065\desktop\arvorebindebusca\main.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
