@@ -27,4 +27,8 @@ Pont esquerdaDireita(Pont r);
 Pont direitaEsquerda(Pont r);
 Pont insere(Pont raiz, TipoChave ch);
 void leituraPreOrdem(Pont raiz);
+int fatorB(Pont raiz);
+Pont remover(Pont raiz, TipoChave ch);
+Pont rotacao(Pont raiz, TipoChave ch);
+void leitura(Pont raiz, TipoChave chavePai);
 #endif // AVL_H_INCLUDED
