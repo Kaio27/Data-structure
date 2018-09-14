@@ -66,7 +66,7 @@ Pont direitaEsquerda(Pont r) {
     return(esquerda(r)); //rotação é esquerda do nó desbalanceado
 }
 
-Pont rotacao(Pont raiz, TipoChave ch) {
+Pont rotacao(Pont raiz) {
 
     if (fatorB(raiz) >= 2){ // +2 = desbalanceamento à esquerda
         if (fatorB(raiz->esq) >= 0) // nó inserido é menor que o filho à esquerda do nó desbalanceado?
@@ -83,13 +83,54 @@ Pont rotacao(Pont raiz, TipoChave ch) {
 
     return raiz;
 }
-
 Pont insere(Pont raiz, TipoChave ch) {
     if (!raiz) return(criaNovoNo(ch));
 
-    /*a chamada recursiva de insere irá percorrer a árvore até encontrar o
+    /*a chamada recursiva de insere ir� percorrer a árvore até encontrar o
      o lugar onde o nó será inserido, então, o mesmo é inserido com a chamada
      criaNo(ch) */
+
+    if (ch < raiz->chave) {
+        raiz->esq = insere(raiz->esq, ch);
+
+        raiz = rotacao(raiz);
+    }
+    else{
+        if (ch > raiz->chave){
+            raiz->dir = insere(raiz->dir, ch);
+
+            raiz = rotacao(raiz);
+        }
+        else {
+            printf("Valor %d duplicado!!\n", ch);
+        }
+    }
+    raiz->h = max(altura(raiz->esq), altura(raiz->dir)) + 1;
+    return(raiz);
+}
+
+Pont procuraNo(Pont q, Pont p){
+    if (q->chave == p->chave){
+        q->h = max(altura(q->esq), altura(q->dir)) + 1;
+        q = rotacao(q);
+        return q;
+    }
+    if (p->chave < q->chave){
+        q = procuraNo(q->esq, p);
+    }
+    else{
+        q = procuraNo(q->dir, p);
+    }
+    q->h = max(altura(q->esq), altura(q->dir)) + 1;
+    q = rotacao(q);
+    return q;
+}
+/*Pont insere(Pont raiz, TipoChave ch) {
+    if (!raiz) return(criaNovoNo(ch));
+
+    a chamada recursiva de insere irá percorrer a árvore até encontrar o
+     o lugar onde o nó será inserido, então, o mesmo é inserido com a chamada
+     criaNo(ch)
 
     if (ch < raiz->chave) {
         raiz->esq = insere(raiz->esq, ch);
@@ -119,44 +160,37 @@ Pont insere(Pont raiz, TipoChave ch) {
     }
     raiz->h = max(altura(raiz->esq), altura(raiz->dir)) + 1;
     return(raiz);
-}
+}*/
 
 Pont remover(Pont raiz, TipoChave ch){
     if (!raiz){
-        printf("Valor não encontrado! Arvore vazia!\n");
+        printf("Valor n�o encontrado! Arvore vazia!\n");
     }
 
-    Pont pai = NULL; //vai ser o pai do nó removido
-
+    Pont pai = NULL;
     if (ch < raiz->chave){
         pai = raiz->esq;
         raiz->esq = remover(raiz->esq, ch);
-        //Remoção foi feita à esquerda
-        // Se a remoçãoo foi feita à esquerda, verifico se há desbalanceamento à direita
-        raiz = rotacao(raiz, ch);
+
+        raiz = rotacao(raiz);
     }
     else if (ch > raiz->chave){
         pai = raiz->dir;
         raiz->dir = remover(raiz->dir, ch);
-        // remoção foi feita à direita
-        // Se a remoção foi feita à direita, verifico se há desbalanceamento à esquerda
-        raiz = rotacao(raiz, ch);
-    }
-    else if (ch == raiz->chave){ //achei nó a ser removido
-        Pont p, q;
-        //p vai ser o pai do substituto
-        //q vai marcar o nó substituto
-        if (!raiz->esq || !raiz->dir){ //nó a ser removido tem 1 filho
 
+        raiz = rotacao(raiz);
+    }
+    else if (ch == raiz->chave){
+        Pont p = NULL, q;
+
+        if (!raiz->esq || !raiz->dir){
             if(!raiz->esq)
                 q = raiz->dir;
             else
                 q = raiz->esq;
 
         }
-        else{ //n� a ser removido tem 2 filhos
-            // busca o nó a ser substitu�do
-            // substituir pelo nó mais à direita da subárvore da esquerda
+        else{
             p = raiz;
             q = raiz->esq;
 
@@ -165,17 +199,22 @@ Pont remover(Pont raiz, TipoChave ch){
                 q = q->dir;
             }
 
-            if (p != raiz) { // o pai do nó substituto é o nó a ser removido?
+            if (p != raiz) {
                 p->dir = q->esq;
                 q->esq = raiz->esq;
             }
             q->dir = raiz->dir;
 
-            //nó promovido foi retirado da subárvore da esquerda
-            //então verifico se há desbalanceamento na subárvore da direita
-            raiz = rotacao(raiz, q->chave);
+            if (p == raiz)
+                q = rotacao(q);
+            else if (p->chave < q->chave)
+                q->esq = procuraNo(q, p);
+            else q->dir = procuraNo(q, p);
+
+            q->h = max(altura(q->esq), altura(q->dir)) + 1;
+            q = rotacao(q);
         }
-        if(!pai) { //n� a ser removido � o n� raiz?
+        if(!pai) {
             free(raiz);
             return(q);
         }
@@ -192,11 +231,12 @@ Pont remover(Pont raiz, TipoChave ch){
         return q;
     }
     else
-        printf("Chave n�o encontrada!!\n");
+        printf("Chave nao encontrada!!\n");
 
     raiz->h = max(altura(raiz->esq), altura(raiz->dir)) + 1;
     return raiz;
 }
+
 
 
 void leituraPreOrdem(Pont raiz){

@@ -1,14 +1,14 @@
 # depslib dependency file v1.0
-1536776412 source:c:\users\a120065\desktop\avl\avl.c
+1536932820 source:c:\users\a120065\desktop\avl\avl.c
 	<stdio.h>
 	<stdlib.h>
 	"avl.h"
 
-1536776434 c:\users\a120065\desktop\avl\avl.h
+1536932613 c:\users\a120065\desktop\avl\avl.h
 	<stdio.h>
 	<stdlib.h>
 
-1536776601 source:c:\users\a120065\desktop\avl\main.c
+1536932464 source:c:\users\a120065\desktop\avl\main.c
 	<stdio.h>
 	<stdlib.h>
 	"avl.h"

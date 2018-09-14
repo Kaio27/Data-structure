@@ -5,7 +5,7 @@
 int main() {
     Pont r = inicializa();
 
-     r = insere(r, 5);
+    r = insere(r, 5);
 
     r = insere(r, 3);
 
@@ -29,11 +29,14 @@ int main() {
 
     r = insere(r, 6);
 
-    //printf("%d", r->chave);
-    //leituraPreOrdem(r);
-    //exibirArvore2(r, r->chave);
 
-    //r = remover(r, 6);
+    //leituraPreOrdem(r);
     leitura(r, r->chave);
     printf("\n");
+
+    r = remover(r, 5);
+    leitura(r, r->chave);
+    printf("\n");
+
+    leitura(r, r->chave);
 }
